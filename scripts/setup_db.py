@@ -1,4 +1,7 @@
-# scripts/setup_db.py
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 import sqlite3
 from lib.db.connection import get_connection
 
